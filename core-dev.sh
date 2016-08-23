@@ -111,6 +111,6 @@ json -I -f package.json -e 'this.scripts.test="FORCE_COLOR=t tape -r babel-regis
 #
 # add flow and test to pre-commit
 
-echo installing & setting up git precommit hook
+echo "installing & setting up git precommit hook"
 npm install --save-dev pre-commit
 json -I -f package.json -e 'this["pre-commit"]=["flow", "test"]'
