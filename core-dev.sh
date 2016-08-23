@@ -26,7 +26,7 @@ json -I -f package.json -e 'this.scripts.flow="flow; test $? -eq 0 -o $? -eq 2"'
 #
 
 # install es2015 & stage-0
-echo installing babel preset es2015 & stage-0
+echo "installing babel preset es2015 & stage-0"
 npm install --save-dev babel-preset-es2015
 npm install --save-dev babel-preset-stage-0
 
